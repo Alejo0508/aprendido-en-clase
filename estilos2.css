@@ -1,0 +1,14 @@
+.caja1{
+background-color: yellow;
+width: 400px;
+padding: 50px; /*sirve para crear una dimension interna del contenido al borde de la caja*/
+border: rgb(38, 0, 255) solid 2px;
+/*margin-bottom: 100px; margenes que tiene con cajas de los lados*/
+}
+
+.caja2{
+    background-color: rgb(55, 0, 255);
+    width: 400px;
+    padding: 50px; /*sirve para crear una dimension interna del contenido al borde de la caja*/
+    border: rgb(238, 255, 0) solid 2px; 
+    }

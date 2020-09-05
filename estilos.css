@@ -1,0 +1,24 @@
+main,footer{
+    background-color: rgb(163, 136, 132); /*cambia el color de fondo*/
+    background-attachment: fixed; /*eja el fondo fijo y solo se mueve el texto*/
+}
+
+/*se seleccionan siempre las etiquetas a modificar*/
+body{ 
+    font-size: 20px; /*se modifica el tamaño de la letra*/
+    font-family: 'Patrick Hand', cursive; /*se pega family de google junto a la etiqueta del index*/
+    color: #6C0AC9; /*modifica los colores*/
+    text-align: center; /*alineacion de texto*/
+}
+
+/*para modificar una etiqueta en concreto se hace una clase, asi*/
+.parrafo{
+    font-size: 16px; /*se modifica el tamaño de la letra*/
+    font-family: 'Patrick Hand', cursive; /*se pega family de google junto a la etiqueta del index*/
+    color: #2173ec; /*modifica los colores*/
+}
+
+.enfasis {
+    color: #973517; /*modifica los colores*/
+}
+
