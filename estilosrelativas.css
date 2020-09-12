@@ -1,0 +1,98 @@
+.caja1{
+    height: 300px;
+    width: 300px;
+    background-color: yellow;
+    display: inline-block; /*pone cajas una al lado de otra*/
+    position: ;
+
+
+}
+
+.caja2{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(0, 4, 255);
+    display: inline-block; /*pone cajas una al lado de otra*/
+    margin-left: 20px; /*se separa de las cajas de los lados*/
+
+}
+
+.caja3{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(247, 11, 11);
+    display: inline-block; /*pone cajas una al lado de otra*/
+    margin-left: 20px; /*se separa de las cajas de los lados*/
+}
+
+.caja4{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(9, 255, 0);
+    display: inline-block; /*pone cajas una al lado de otra*/
+    margin-left: 20px; /*se separa de las cajas de los lados*/
+}
+
+.caja5{
+    height: 300px;
+    width: 300px;
+    background-color: rgb(153, 0, 255);
+    position: relative; /*configura la caja para posicionarla en lugares diferentes dentro del plano X y Y.*/
+    left: 450px;
+    bottom: 100px;
+
+}
+
+.goku{
+    height: 600px;
+    width: 600px;
+    background-color: rgb(0, 255, 64);
+    position: relative;
+}
+
+.gohan{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 123, 0);
+    position: absolute; /*es para mover una caja hijo dentro de una caja padre*/
+    right: 0px;
+    bottom: 0px;
+
+    /*para mover una caja hijo con respecto al padre, el padre debe tener un posicion relativa siempre*/
+}
+
+.padre{
+    background-color: darkred;
+    max-width: 800px; /*dice hasta cuando va a crecer el ancho*/
+    width: 70%; /*cuando hay un max-width es para decir cuanto va a usar de este para mostrar*/
+    padding: 2.5em;
+    border: black solid 2px;
+    /* margin: 1.25em 0.625em 1.25em 0.625em; la margen se lee en manecillas del reloj (alto derecha abajo izquierda)*/
+    margin: 1.25em auto; /*cuando se usan 2 la primera es arriba y abajo y la segunda es derecha e izquierda*/
+    font-size: 16px; /*se usa para calcular en em los pixeles de las fuentes, siempre se usa la clase padre para esto.*/
+}
+
+.titulos{
+    font-size: 1.5em;
+    color: rgb(0, 255, 0);
+    padding: 3.5em;
+
+}
+
+.parrafo{
+    font-size: 1.125em;
+    color: aliceblue;
+    padding: 3.5em;
+
+}
+
+@media screen and ( max-width: 720px){ /*lo que indica es que si hay una pantalla de 720px o inferior haga algo*/
+    .padre{
+        background-color: rgb(16, 150, 16);
+
+    }
+    .titulos{
+        color: rgb(0, 136, 255);    
+    }
+
+}
