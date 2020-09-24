@@ -4,42 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilosboostrap.css">
     <title>Document</title>
 </head>
 
 <body>
     <header>
-
-        <nav>
-            <h1>Registro</h1>
-
-            <ol>
-                <li>Opcion 1</li>
-                <li>Opcion 2</li>
-                <li>Opcion 3</li>
-            </ol>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark banner fixed-top"> <!--si quiero cambiar el fonso del menu se quita el bg y se pone una clase css que yo quiera.--><!--fixed-top sirve apra dejar anclado la barra de navegacion-->
+            <img src="img/images.jpg" width="30" height="30" alt="" loading="lazy">
+            <a class="navbar-brand" href="index.html">Menu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item"> <!--el active mantiene la letra encendida-->
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="registro.html">Registro</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
     </header>
-    <main>
-        <h1>Registro</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur excepturi eius, sit cupiditate dolore sint odio reprehenderit quisquam debitis inventore doloribus deserunt unde, et dolorum aliquid impedit quaerat laborum labore.</p>
+    
+    <main class="bg-dark text-white">
         <hr>
-        <form>
-            <label for="Nombre">Nombre</label>
-            <input type="text" placeholder="Nombre" name="Nombre" id="Nombre">
-            <input type="password" name="" id="">
-            <input type="number" name="" id="">
-            <input type="email" name="" id="">
-            <input type="radio" name="" id="">
-            <input type="submit" value="submit">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div>
+                    <h1 class="mb-4">Registro</h1>
+                    <form class="">
 
-        </form>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-user-secret"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" id="nombre" name="nombre">
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope-open"></i></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Correo" aria-label="Username" aria-describedby="basic-addon1" id="correo" name="correo">
+                          </div>
+
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Contraseña" aria-label="Username" aria-describedby="basic-addon1" id="pass" name="pass">
+                          </div>
+                        <button type="submit" class="btn btn-outline-primary btn-block mb-4" id="enviar" name="enviar">Enviar</button>
+                      </form>
+                </div>
+            </div>
+        </div>
 
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center">
         <p>&copy; Alejandro montoya</p>
 
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/e4f0235d6c.js" crossorigin="anonymous"></script>
 </body>
 </html>
